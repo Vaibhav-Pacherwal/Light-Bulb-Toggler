@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #222;
+}
+
+.Workspace {
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #222;
+}
+
+.light {
+    height: 500px;
+    width: 33.33%;
+    /* border: 2px solid black; */
+    /* background: linear-gradient(to right,red,yellow,green); */
+    /* background-color: #222; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* display: none; */
+    transform: translateY(-390px);
+}
+
+.light .wire {
+    height: 50px;
+    width: 0px;
+    border: 2px solid black ;
+}
+
+.light .holder {
+    height: 17px;
+    width: 17px;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.light .pipe {
+    height: 10px;
+    width: 17px;
+    border: 2px solid black;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.light .bulb {
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+    transform: translateY(-2px);
+    background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 54%, hsla(0, 0%, 0%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#000000", GradientType=1 );
+    box-shadow: 0 0 50px #fff, 0 0 100px #fff, 0 0 150px #fff, 0 0 200px #fff, 0 0 250px #fff;
+    background-color: white;
+}
+
+.light .bulb::before {
+    background-color: #fff;
+}
+
+/* #light2 {
+    height: 50px;
+} */
+
+/* .on-off {
+    height: 82px;
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.center {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-200px);
+}
+
+button {
+    /* transform: translate(730px,-240px); */
+}
+
+/* .ON {
+    background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 54%, hsla(0, 0%, 0%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#000000", GradientType=1 );
+    box-shadow: 0 0 50px #fff, 0 0 100px #fff, 0 0 150px #fff, 0 0 200px #fff, 0 0 250px #fff;
+    background-color: white;
+} */
+
+.translation {
+    transform: translateY(0px);
+}
+
+.translation2 {
+    transform: translateY(0px);
+}
+
+@media (min-width: 831px) and (max-width: 950px) {
+    .bulb {
+        box-shadow: 0 0 50px #fff, 0 0 100px #fff, 0 0 150px #fff;
+    }
+}
+
